@@ -8,7 +8,7 @@ export async function getLinkHubInfo() {
   const endpoint = getCookie('link_hub_info');
   if (!endpoint) {
     console.log('No link hub info cookie found');
-    return null;
+    // return null;
   }
 
   const response = await fetch(endpoint_, {
